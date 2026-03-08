@@ -13,6 +13,7 @@ class Student extends Model
         'name',
         'email',
         'user_id',
+        'phone',
     ];
 
     public $timestamps = false;
@@ -24,4 +25,14 @@ class Student extends Model
     {
         return $this->belongsTo(User::class);
     }
+    
+    public function invoices()
+{
+    return $this->hasMany(Invoice::class);
+}
+
+public function payments()
+{
+    return $this->hasMany(Payment::class);
+}
 }
