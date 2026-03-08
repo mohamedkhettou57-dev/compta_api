@@ -43,6 +43,25 @@ php artisan serve
 The API will be available at: 
 http://127.0.0.1:8000
 
+## API Endpoints
+
+POST /api/login  
+GET /api/me  
+
+GET /api/students  
+POST /api/students  
+PATCH /api/students/{id}  
+DELETE /api/students/{id}  
+
+GET /api/invoices  
+POST /api/invoices  
+PATCH /api/invoices/{id}  
+DELETE /api/invoices/{id}  
+
+GET /api/payments  
+POST /api/payments  
+PATCH /api/payments/{id}  
+DELETE /api/payments/{id}
 
 
 
